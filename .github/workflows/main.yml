@@ -13,6 +13,7 @@ jobs:
 
     env:
       ACTIONVIEW_VERSION: ${{ matrix.actionview_version }}
+      COVERAGE: true
 
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +26,12 @@ jobs:
           bundler-cache: true
         continue-on-error: ${{ matrix.ruby_version == 'ruby-head' }}
 
-      - name: Run the default task
+      - name: Run tests and collect coverage
         run: bundle exec rake
         continue-on-error: ${{ matrix.ruby_version == 'ruby-head' }}
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+        if: ${{ matrix.ruby_version == '3.3' && matrix.actionview_version == '7.1' }}

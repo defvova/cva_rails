@@ -22,3 +22,4 @@ gem "rubocop-minitest", require: false
 gem "rubocop-rake", require: false
 
 gem "simplecov", "~> 0.22.0", require: false
+gem "simplecov-cobertura", "~> 2.1", require: false

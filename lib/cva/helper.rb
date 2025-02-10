@@ -17,7 +17,7 @@ module Cva
       # This data is shared through the class and
       # can be accessed to build variant-specific class names dynamically.
       #
-      # @param base [Array<String>] Base class names applied to the object/component.
+      # @param base [Array<String> | String] Base class names applied to the object/component.
       # @param schema [Hash] Schema for defining variants, default variants, and compound variants.
       #
       # @return [void]

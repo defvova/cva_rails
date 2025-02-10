@@ -9,7 +9,7 @@ module Cva
     include RenderERBUtils
 
     cva(
-      ["px-4 py-2", "bg-red-100"],
+      "px-4 py-2 bg-red-100",
       {
         variants: { size: { medium: "text-base", small: "text-sm", large: "text-xl" },
                     color: { red: "text-red-100" } },

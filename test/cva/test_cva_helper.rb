@@ -73,10 +73,8 @@ module Cva
     end
 
     def test_schema_with_variants
-      self.class.cva(
-        ["px-4 py-2", "bg-red-100"],
-        { variants: { size: { medium: "text-base", small: "text-sm" } } }
-      )
+      self.class.cva("px-4 py-2 bg-red-100",
+                     { variants: { size: { medium: "text-base", small: "text-sm" } } })
 
       assert_equal "px-4 py-2 bg-red-100 text-base", self.class.variants({ size: :medium })
       assert_equal "px-4 py-2 bg-red-100 text-sm", self.class.variants({ size: :small })

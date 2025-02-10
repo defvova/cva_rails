@@ -1,4 +1,4 @@
-# cva_rails [![codecov](https://codecov.io/gh/defvova/cva_rails/branch/main/graph/badge.svg?token=SUOCE7FAYF)](https://codecov.io/gh/defvova/cva_rails) [![CI](https://github.com/defvova/cva_rails/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/defvova/cva_rails/actions?query=workflow%3ACI) [![GitHub License](https://img.shields.io/github/license/defvova/cva_rails)](LICENSE.txt)
+# cva_rails [![Gem Version](https://badge.fury.io/rb/cva_rails.svg?icon=si%3Arubygems)](https://badge.fury.io/rb/cva_rails) [![codecov](https://codecov.io/gh/defvova/cva_rails/branch/main/graph/badge.svg?token=SUOCE7FAYF)](https://codecov.io/gh/defvova/cva_rails) [![CI](https://github.com/defvova/cva_rails/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/defvova/cva_rails/actions?query=workflow%3ACI) [![GitHub License](https://img.shields.io/github/license/defvova/cva_rails)](LICENSE.txt)
 
 > A tiny and simple gem for variant-based styling logic.
 

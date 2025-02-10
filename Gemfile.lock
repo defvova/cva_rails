@@ -40,6 +40,7 @@ GEM
     ast (2.4.2)
     base64 (0.2.0)
     benchmark (0.4.0)
+    benchmark-ips (2.14.0)
     bigdecimal (3.1.9)
     builder (3.3.0)
     clsx-rails (1.0.1)
@@ -130,6 +131,7 @@ PLATFORMS
 DEPENDENCIES
   actionpack (>= 6.1)
   actionview
+  benchmark-ips (~> 2.14)
   cva_rails!
   minitest (~> 5.16)
   rake (~> 13.0)

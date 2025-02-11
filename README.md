@@ -188,10 +188,10 @@ class ButtonComponent < ViewComponent::Base
       })
 
   erb_template <<-ERB
-    <a href="<%= @href %>" class="<%= TailwindMerge::Merger.new.merge(variants(@style_variants)) %>"><%= content %></a>
+  	<%= link_to content, @href, class: TailwindMerge::Merger.new.merge(self.class.variants(@style_variants)) %>
   ERB
 
-  def initialize(href:, style_variants = {})
+  def initialize(href = "#", style_variants = {})
     @href = href
     @style_variants = style_variants
   end
